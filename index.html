@@ -1,80 +1,80 @@
 <html>
-	<title> Karma </title>
+<title> Karma </title>
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="description" content="Get your errands done.">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="functions.js"></script>
-		<link rel= "stylesheet" href="styles.css">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Get your errands done.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="functions.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-	<body style="background-color: #1FB880;">
+<body style="background-color: #1FB880;">
 
-			<!--facebook sdk-->
-		<script>
-			  window.fbAsyncInit = function() {
-			    FB.init({
-			      appId      : '370559519994933',
-			      xfbml      : true,
-			      version    : 'v2.8'
-			    });
+	<!--facebook sdk-->
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				appId: '370559519994933',
+				xfbml: true,
+				version: 'v2.8'
+			});
 
-			    FB.getLoginStatus(function(response){
-			    	if (response.status=='connected'){
-
-	
-			    	}
-			    	else {
-			    	
-			    	}
-			    });
-
-			    FB.Event.subscribe('auth.login', function(){
-   					 window.location.href = 'feed.html';
-				});
-			  };
-
-			  (function(d, s, id){
-			     var js, fjs = d.getElementsByTagName(s)[0];
-			     if (d.getElementById(id)) {return;}
-			     js = d.createElement(s); js.id = id;
-			     js.src = "//connect.facebook.net/en_US/sdk.js";
-			     fjs.parentNode.insertBefore(js, fjs);
-			   }(document, 'script', 'facebook-jssdk'));
-		</script>
+			FB.getLoginStatus(function(response) {
+				if (response.status == 'connected') {
 
 
-		<div class="container-fluid"  >
-			<div id="centerDiv" style="background-color: #128C71;"> 
-				<span>
+				} else {
+
+				}
+			});
+
+			FB.Event.subscribe('auth.login', function() {
+				window.location.href = 'feed.html';
+			});
+		};
+
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+	<div class="container-fluid">
+		<div id="centerDiv" style="background-color: #128C71;">
+			<span>
 					<img src= "Images/FinalPNG/greenCheck.png">
-					<div id= "loginButton" class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"> 
+					<div id= "loginButton" class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false">
 					</div>
 				</span>
 
-						<div class="row" style="width: 16em; margin-left: -8em; position: absolute; left: 50%; height: 7em;">
-						<div class="col-xs-2">
-						<img src= "Images/FinalPNG/redX.png" >
+			<div class="row">
+					<img src="Images/FinalPNG/redX.png">
+				</div>
+				<form class="form-inline" style="top: 90%;">
+					<div class="col-md-4" style="top: 60%;">
+						<div class="form-group">
+							<input type="text">
 						</div>
-						<form class="form-inline" style="width: 15em;">
-							<div class="col-md-4" style="width: 5em;">
-							<div class="form-group" style="width: 5em;  width: 10em;" > 
-								<input type="text">
-							</div>
-							</div>
-					
-						</form>
-						</div>
-					
-				
+					</div>
+				</form>
+			</div>
 
-			</div> 
+
 
 		</div>
-	</body>
+
+	</div>
+</body>
 
 
 
