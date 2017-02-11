@@ -1,5 +1,5 @@
 body{
-	font-family: 'Quicksand', sans-serif;
+	font-family: sans-serif;
 }
 
 
@@ -102,7 +102,7 @@ body{
 .feature_two{}
 .feature_three{}
 .describe_area{}
-.describe_area .page_title h2, 
+.describe_area .page_title h2,
 .describe_area .page_title p{
 	color: #fff
 }
@@ -155,10 +155,10 @@ body{
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   width: 320px;
 }
-.contact_area{} 
+.contact_area{}
 /*.contact_area .page_title h2{
   color: #fff
-} 
+}
 .contact_area .page_title p{
   color: #Fff
 } */

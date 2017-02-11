@@ -18,18 +18,69 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-		<style>
+	<style>
 		body {
-			background-color: #9B9B9B;
+			background-color: #EEEEEE;
 		}
-		.top-buffer { margin-top: 10px; }
-		</style>
+
+		.top-buffer {
+			margin-top: 10px;
+		}
+
+		.card {
+			/* card: */
+			background: #FAFAFA;
+			box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+			border-radius: 2px;
+		}
+
+		.card h5 {
+			font-family: Roboto-Regular;
+			font-size: 16px;
+			color: rgba(0, 0, 0, 0.95);
+			line-height: 24px;
+		}
+
+		.wrapper {
+			overflow: hidden;
+		}
+
+		.favor {
+			float: left;
+			/*width: 50%;*/
+			color: #00F;
+			font-weight: bold;
+		}
+
+		.price {
+			float: right;
+			display: block;
+			overflow: hidden;
+		}
+
+		span.glyphicon {
+			font-size: 2em;
+		}
+
+		#category {
+			display: inline-block;
+			width: 10%;
+			text-align: left;
+		}
+
+		#cardcontent {
+			display: inline-block;
+			float: right;
+			width: 85%;
+		}
+	</style>
 </head>
 
 <body>
 	<div class="container-fluid">
 		<div class="row" style="color:white; background-color: #222">
-			<center><h4>Home</h4></center>
+			<center>
+				<h4>Home</h4></center>
 		</div>
 
 		<div class="top-buffer"></div>
@@ -38,10 +89,17 @@
 			<div class="col-md-12">
 				<div class="card well well-sm clearfix">
 					<div class="card-block">
-						<h5 class="card-title">Looking for a coffee from Tazza</h5>
-						<p class="card-text">Just trying to get a coffee before my class.</p>
-						<p style="color: green"><b>$4.00</b></p>
-						<button type="button" class="btn btn-success pull-right">Accept Bounty</button>
+						<div id="category">
+							<span class="glyphicon glyphicon-apple" aria-hidden="true"></span>
+						</div>
+						<div id="cardcontent" class="col-10">
+							<div class="wrapper" id="titleblock">
+								<span class="favor"><h5 class="card-title">Looking for a coffee from Tazza</h5></span>
+								<span class="price"><h5 style="color:rgba(0,208,89,0.54)">$4.00</h5></span>
+							</div>
+							<p class="card-text">Just trying to get a coffee before my class.</p>
+							<a href="#" class="text-muted" style="float:right">Accept</a>
+						</div>
 					</div>
 				</div>
 			</div>
