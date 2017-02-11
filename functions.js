@@ -23,12 +23,14 @@
 	    
 	      		 
 				window.location.href = 'feed.html';
-			
+
 			
 	      },
 	      'error': function(data){
 	      	console.log("failed");
+
 	      }
+
 	  });
 
 
@@ -44,7 +46,10 @@
 		// console.log(returnVal);
 
 	});
-
+	
+	function doThis(){
+		window.location.href="info.html"
+	};
 
 
 
