@@ -11,7 +11,7 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 	</head>
 
-	<body>
+	<body style="background-color: #1FB880;">
 
 			<!--facebook sdk-->
 		<script>
@@ -24,11 +24,11 @@
 
 			    FB.getLoginStatus(function(response){
 			    	if (response.status=='connected'){
-			    		document.getElementById('status').innerHTML='gucci';
+
 	
 			    	}
 			    	else {
-			    		document.getElementById('status').innerHTML='nooooo';
+			    	
 			    	}
 			    });
 
@@ -46,11 +46,33 @@
 			   }(document, 'script', 'facebook-jssdk'));
 		</script>
 
-		<div class="container-fluid">
-			<div id="status">
+
+		<div class="container-fluid"  >
+			<div id="centerDiv" style="background-color: #128C71;"> 
+				<span>
+					<img src= "Images/FinalPNG/greenCheck.png">
+					<div id= "loginButton" class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"> 
+					</div>
+				</span>
+
+						<div class="row" style="width: 16em; margin-left: -8em; position: absolute; left: 50%; height: 7em;">
+						<div class="col-xs-2">
+						<img src= "Images/FinalPNG/redX.png" >
+						</div>
+						<form class="form-inline" style="width: 15em;">
+							<div class="col-md-4" style="width: 5em;">
+							<div class="form-group" style="width: 5em;  width: 10em;" > 
+								<input type="text">
+							</div>
+							</div>
+					
+						</form>
+						</div>
+					
 				
-			</div>
-			<div id="centerDiv"> <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div> </div>
+
+			</div> 
+
 		</div>
 	</body>
 
