@@ -25,12 +25,16 @@
 			    FB.getLoginStatus(function(response){
 			    	if (response.status=='connected'){
 			    		document.getElementById('status').innerHTML='gucci';
+	
 			    	}
 			    	else {
 			    		document.getElementById('status').innerHTML='nooooo';
-			    		console.log(response.status);
 			    	}
 			    });
+
+			    FB.Event.subscribe('auth.login', function(){
+   					 window.location.href = 'feed.html';
+				});
 			  };
 
 			  (function(d, s, id){
