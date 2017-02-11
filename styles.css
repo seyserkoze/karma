@@ -2,14 +2,20 @@ body{
 	background-color: #1FB880;
 }
 
+
+
 #centerDiv{
 	position:absolute;
 	top: 50%;
 	left: 50%;
-	width:30em;
-	height:18em;
+	width:16em;
+	height:13em;
 	margin-top: -9em; 
-	margin-left: -15em; 
+	margin-left: -8em; 
 	border: 1px solid #ccc;
 	background-color: #f3f3f3;
+}
+
+#loginButton{
+
 }
