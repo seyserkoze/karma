@@ -1,13 +1,56 @@
 <html>
-<title> Karma </title>
+	<title> Karma </title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="description" content="Get your errands done.">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Get your errands done.">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="functions.js"></script>
+		<link rel= "stylesheet" href="styles.css">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	</head>
 
-<body>
+	<body>
 
-</body>
+			<!--facebook sdk-->
+		<script>
+			  window.fbAsyncInit = function() {
+			    FB.init({
+			      appId      : '370559519994933',
+			      xfbml      : true,
+			      version    : 'v2.8'
+			    });
+
+			    FB.getLoginStatus(function(response){
+			    	if (response.status=='connected'){
+			    		document.getElementById('status').innerHTML='gucci';
+			    	}
+			    	else {
+			    		document.getElementById('status').innerHTML='nooooo';
+			    		console.log(response.status);
+			    	}
+			    });
+			  };
+
+			  (function(d, s, id){
+			     var js, fjs = d.getElementsByTagName(s)[0];
+			     if (d.getElementById(id)) {return;}
+			     js = d.createElement(s); js.id = id;
+			     js.src = "//connect.facebook.net/en_US/sdk.js";
+			     fjs.parentNode.insertBefore(js, fjs);
+			   }(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<div class="container-fluid">
+			<div id="status">
+				
+			</div>
+			<div id="centerDiv"> <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div> </div>
+		</div>
+	</body>
+
+
+
 
 </html>

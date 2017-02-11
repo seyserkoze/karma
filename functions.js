@@ -1,7 +1,7 @@
 
 	var xmlHttp = new XMLHttpRequest();
-	xmlHttp.open( "GET", "https://apis.scottylabs.org/directory/v1/andrewID/chut", false );
+	xmlHttp.open( "GET", "https://apis.scottylabs.org/directory/v1/andrewID/skhazanc", false );
 	xmlHttp.send(null);
-	returnVal= xmlHttp.responseText
-	document.write(returnVal);
+	returnVal= xmlHttp.responseText;
+	// document.write(returnVal);
 	
